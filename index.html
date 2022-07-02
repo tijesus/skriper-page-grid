@@ -18,12 +18,12 @@
     <header>
       <a href="index.html"> <img src="./images/img/just-logo.svg" alt="" /></a>
       <div class="nav">
-        <a href="trend.html"
+        <a class="hidden_on_mobile" href="trend.html"
           ><p>
             <span><img src="./images/img/flame.svg" alt="flames" /></span>Trends
           </p></a
         >
-        <a href="featured.html"
+        <a class="hidden_on_mobile" href="featured.html"
           ><p>
             <span
               ><img
@@ -32,7 +32,7 @@
             >Featured
           </p></a
         >
-        <a href="latest.html"
+        <a class="hidden_on_mobile" href="latest.html"
           ><p>
             <span><img src="./images/img/watch.svg" alt="watch" /></span>Latest
           </p></a
@@ -42,13 +42,15 @@
             <span
               ><img
                 src="./images/img/just-menu-item-logo.svg"
-                alt="menu just-menu-item-logo" /></span
-            >Start-Coding
+                alt="menu just-menu-item-logo"
+            /></span>
+            <span class="hidden_on_mobile">Start-Coding</span>
           </p></a
         >
         <a href="#"
           ><button>
-            <span><img src="./images/img/login.svg" alt="account" /></span>Login
+            <span><img src="./images/img/login.svg" alt="account" /></span>
+            <span class="hidden_on_mobile">Login</span>
           </button></a
         >
         <a href="#">
@@ -61,36 +63,37 @@
     </header>
     <main>
       <img src="./images/img/logo-text.svg" alt="" id="skrip" />
-      <h1>The place where your ideas come true</h1>
+      <h1>The place where your <br />ideas come true</h1>
       <h2 class="play">The playground for developers with cool stuff</h2>
       <img src="./images/img/code.png" alt="" id="code" />
-      <p class="explore">
-        Explore and experiment with HTML, JavaScript and CSS visualise your
-        ideas and get instant feedback.
-      </p>
+
       <div class="main-content">
-        <div>
-          <h2>HTML</h2>
-          <p>Write your html code fast and preview it in real time</p>
-          <h2>CSS</h2>
-          <p>
-            Powerful css editor with autocomplete module and many tools as
-            Gradients generator, colors utils and more...
-          </p>
-          <h2>JavaScript</h2>
-          <p>
-            Write cool js code quickly and get instant feedback in real time
-            with our sandbox, you can run your code in the sandbox and get the
-            result
-          </p>
-        </div>
-        <div>
+        <p class="explore">
+          Explore and experiment with HTML, JavaScript and CSS visualise your
+          ideas and get instant feedback.
+        </p>
+        <div class="home-flex">
+          <div>
+            <h2>HTML</h2>
+            <p>Write your html code fast and preview it in real time</p>
+            <h2>CSS</h2>
+            <p>
+              Powerful css editor with autocomplete module and many tools as
+              Gradients generator, colors utils and more...
+            </p>
+            <h2>JavaScript</h2>
+            <p>
+              Write cool js code quickly and get instant feedback in real time
+              with our sandbox, you can run your code in the sandbox and get the
+              result
+            </p>
+          </div>
           <img src="./images/img/html-css-js.png" alt="" />
         </div>
       </div>
       <div class="overall">
         <div class="sub-content share-code">
-          <div class="share-code">
+          <div class="share-code bottom-flex">
             <img src="./images/img/share-code.png" alt="" />
           </div>
           <div>
@@ -104,7 +107,7 @@
           </div>
         </div>
         <div class="sub-content">
-          <div class="snippets">
+          <div class="snippets bottom-flex">
             <img src="./images/img/snippets.png" alt="" />
           </div>
           <div>
@@ -116,7 +119,7 @@
           </div>
         </div>
         <div class="sub-content">
-          <div class="tutorials">
+          <div class="tutorials bottom-flex">
             <img src="./images/img/tutorials.png" alt="" />
           </div>
           <div>
@@ -128,7 +131,7 @@
           </div>
         </div>
         <div class="sub-content">
-          <div class="markdown">
+          <div class="markdown bottom-flex">
             <img src="./images/img/markdown.png" alt="" />
           </div>
           <div>
@@ -142,24 +145,26 @@
       </div>
     </main>
     <footer>
-      <div>
-        <img src="./images/img/just-skripper-text.svg" alt="" />
-        <div class="social">
-          <img src="./images/img/twitter.svg" alt="twitter" />
-          <img src="./images/img/youtube.svg" alt="youtube" />
-          <img src="./images/img/facebook.svg" alt="facebook" />
+      <div class="content">
+        <div>
+          <img src="./images/img/just-skripper-text.svg" alt="" />
+          <div class="social">
+            <img src="./images/img/twitter.svg" alt="twitter" />
+            <img src="./images/img/youtube.svg" alt="youtube" />
+            <img src="./images/img/facebook.svg" alt="facebook" />
+          </div>
         </div>
-      </div>
-      <div>
-        <h3>LINKS OF INTEREST</h3>
-        <p>FAQ</p>
-        <p>Twitter</p>
-        <p>Facebook</p>
-        <p>Youtube</p>
-      </div>
-      <div class="right">
-        <p>Copyright Skriper.dev &copy; 2022</p>
-        <img src="./images/img/contact-skriper-text.svg" alt="" />
+        <div>
+          <h3>LINKS OF INTEREST</h3>
+          <p>FAQ</p>
+          <p>Twitter</p>
+          <p>Facebook</p>
+          <p>Youtube</p>
+        </div>
+        <div class="right">
+          <p>Copyright Skriper.dev &copy; 2022</p>
+          <img src="./images/img/contact-skriper-text.svg" alt="" />
+        </div>
       </div>
     </footer>
   </body>

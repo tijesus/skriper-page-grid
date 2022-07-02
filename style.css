@@ -8,11 +8,11 @@
 }
 
 body {
-  width: 100%;
   background-color: #131313;
   margin: 0 auto;
   color: white;
   position: relative;
+  max-width: 1440px;
 }
 
 header {
@@ -25,6 +25,7 @@ header {
   background-color: #131313;
   position: fixed;
   z-index: 1;
+  top: 0;
 }
 
 .logo {
@@ -34,7 +35,6 @@ header {
 
 .logo h3,
 p {
-  margin-left: 7px;
   line-height: 18px;
   font-size: small;
 }
@@ -44,7 +44,6 @@ p {
 }
 
 .logo p {
-
   font-size: small;
 }
 
@@ -77,7 +76,6 @@ p {
 
 .nav a span img {
   color: #414141;
-
 }
 
 #start-code {
@@ -87,46 +85,59 @@ p {
 }
 
 main #skrip {
-  margin-top: 100px;
-  margin-left: 25%;
+  display: block;
+  margin: 100px auto 0;
   /* width: 50%; */
 }
 
 main h1 {
   text-align: center;
-  background: linear-gradient(292.46deg, #27ae60 17.79%, #2f80ed 35.92%, #9b51e0 54.06%, #eb5757 71.08%, #f2994a 87.36%);
+  background: linear-gradient(
+    292.46deg,
+    #27ae60 17.79%,
+    #2f80ed 35.92%,
+    #9b51e0 54.06%,
+    #eb5757 71.08%,
+    #f2994a 87.36%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0 300px;
+  /* margin: 0 300px; */
   font-size: 60px;
   line-height: 90px;
 }
 
-main .play {
+main h2.play {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
 }
 
 #code {
-  margin: 0 0 10px 270px;
-  width: 50em;
+  margin: 20px auto;
+  display: block;
+  max-width: 790px;
+  width: 90%;
+}
+
+main p.explore {
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .main-content {
-  margin: 0 200px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+.main-content .home-flex {
   display: flex;
   align-items: center;
 }
-
 .main-content p {
   font-size: 17px;
-}
-
-main .explore {
-  margin: 0 200px;
-  font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .main-content h2 {
@@ -138,8 +149,9 @@ main .explore {
 }
 
 .overall {
-  margin-top: 20000px;
-  margin: 0 190px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .share-code {
@@ -163,7 +175,7 @@ main .explore {
 }
 
 .page {
-  background-color: rgba(37, 37, 37, .8);
+  background-color: rgba(37, 37, 37, 0.8);
   /* background-color: blue;
   border: 100px solid gold; */
   display: flex;
@@ -173,7 +185,7 @@ main .explore {
 }
 
 .page button:disabled {
-  background-color: hsla(0, 0%, 100%, .04);
+  background-color: hsla(0, 0%, 100%, 0.04);
 }
 
 .page button svg {
@@ -190,7 +202,7 @@ main .explore {
   background-color: #414141;
   margin-bottom: 1000px;
   color: white;
-  margin: 100px 7px;
+  margin: 80px 7px 20px;
   border: none;
   width: 50px;
 }
@@ -225,12 +237,12 @@ main .explore {
 .image:hover {
   padding-top: 7px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .image img {
   width: 100%;
-  box-shadow: 0px 15px 36px rgba(0, 0, 0, .8);
+  box-shadow: 0px 15px 36px rgba(0, 0, 0, 0.8);
 }
 
 .content {
@@ -250,8 +262,6 @@ main .explore {
   margin: 3px 0;
 }
 
-.content .text {}
-
 .author {
   display: flex;
   margin: 10px 0;
@@ -263,7 +273,7 @@ main .explore {
 }
 
 .foot {
-  background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, 0.1);
   padding: 10px;
   /* position: fixed; */
 }
@@ -335,8 +345,7 @@ main .explore {
 }
 
 .review {
-  background-color: hsla(0, 0%, 100%, .05);
-  ;
+  background-color: hsla(0, 0%, 100%, 0.05);
   display: flex;
   justify-content: space-between;
 }
@@ -352,10 +361,15 @@ main .explore {
 }
 
 footer {
-  background-color: hsla(0, 0%, 100%, .05);
+  background-color: hsla(0, 0%, 100%, 0.05);
+  padding: 50px 0;
+}
+footer div.content {
   display: flex;
   justify-content: space-between;
-  padding: 50px 200px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
 }
 
 footer .social img {
@@ -363,106 +377,20 @@ footer .social img {
 }
 
 footer h3 {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .right img {
   margin-top: 10px;
 }
 
-
-
-
-@media (min-width: 400px) {
+@media screen and (min-width: 400px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
   }
 
   .box {
     max-width: 100%;
-  }
-
-  main #skrip {
-    margin-top: 150px;
-    width: 50%;
-  }
-
-  main h1 {
-    text-align: center;
-    background: linear-gradient(292.46deg, #27ae60 17.79%, #2f80ed 35.92%, #9b51e0 54.06%, #eb5757 71.08%, #f2994a 87.36%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 50px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  main .play {
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    width: 450px;
-  }
-
-  #code {
-    margin-left: 30px;
-    width: 25em;
-
-  }
-
-  .main-content {
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .main-content p {
-    font-size: 17px;
-  }
-
-  main .explore {
-    margin: 45px;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .main-content h2 {
-    text-align: left;
-  }
-
-  .main-content img {
-    width: 350px;
-  }
-
-  .overall {
-    margin-top: 20000px;
-    margin: 0 190px;
-  }
-
-  .share-code {
-    margin-top: 40px;
-  }
-
-  .sub-content {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .sub-content img {
-    margin-right: 30px;
-    width: 260px;
-  }
-
-  .sub-content h2 {
-    text-align: left;
-    font-size: 18px;
-  }
-
-  footer {
-    background-color: hsla(0, 0%, 100%, .05);
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -481,5 +409,29 @@ footer h3 {
 @media (min-width: 1200px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  header .hidden_on_mobile {
+    display: none;
+  }
+  .main-content .home-flex {
+    flex-direction: column;
+  }
+  .main-content .home-flex img {
+    margin-top: 30px;
+  }
+  .sub-content {
+    flex-direction: column;
+  }
+  .sub-content .bottom-flex {
+    margin-left: auto;
+  }
+  footer div.content {
+    flex-direction: column;
+  }
+  .content .social {
+    display: none;
   }
 }
